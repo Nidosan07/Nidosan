@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="icon" href="assets/img/wp compress.png" />
 
-    <title>Nidosan</title> 
+    <title>Nidosan</title>
   </head>
 
   <body>
@@ -696,7 +696,33 @@
 
         <div class="portfolio__container container swiper-container">
           <div class="swiper-wrapper">
-            <!--==================== PORTFOLIO 1 ====================-->
+
+                                               <!--==================== PORTFOLIO 1 ====================-->
+                                               <div class="portfolio__content grid swiper-slide">
+                                                <img
+                                                  src="assets/img/screencapture-multi-mart-000webhostapp-2024-05-05-19_44_421.png"
+                                                  alt=""
+                                                  class="portfolio__img"
+                                                />
+                                  
+                                                <div class="portfolio__data">
+                                                  <h3 class="portfolio__title">Modern Website</h3>
+                                                  <p class="portfolio__description">
+                                                    Website adaptable to all devices, with ui components and
+                                                    animated interactions. With Back-End Technology Using PHP
+                                                  </p>
+                                                  <a
+                                                    href="http://multi-mart.000webhostapp.com/"
+                                                    target="_blank"
+                                                    class="button button--flex button--small portfolio__button"
+                                                  >
+                                                    Demo
+                                                    <i class="uil uil-arrow-right button__icon"></i>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                  
+            <!--==================== PORTFOLIO 2 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/Screenshot 2023-06-17 194457.png"
@@ -720,7 +746,7 @@
                 </a>
               </div>
             </div>
-            <!--==================== PORTFOLIO 2 ====================-->
+            <!--==================== PORTFOLIO 3 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/Screenshot 2023-06-18 171900.png"
@@ -744,7 +770,7 @@
                 </a>
               </div>
             </div>
-            <!--==================== PORTFOLIO 3 ====================-->
+            <!--==================== PORTFOLIO 4 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/portfolio3.jpg"
@@ -767,6 +793,58 @@
                 </a>
               </div>
             </div>
+
+                        <!--==================== PORTFOLIO 5 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                          <img
+                            src="assets/img/screencapture-localhost-8080-OnlineShoppingSystem-2024-05-05-19_40_411.png"
+                            alt=""
+                            class="portfolio__img"
+                          />
+            
+                          <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">
+                              Website adaptable to all devices, with ui components and
+                              animated interactions. With Back-End Technology Using JSP and Java Servlets
+                            </p>
+                            <a
+                              href="https://github.com/Nidosan07/Multi-Mart_Ecommerce_Site"
+                              target="_blank"
+                              class="button button--flex button--small portfolio__button"
+                            >
+                              Demo
+                              <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                          </div>
+                        </div>
+
+ 
+                        <!--==================== PORTFOLIO 6 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                          <img
+                            src="assets/img/screencapture-localhost-ncas-2024-05-05-19_42_241.png"
+                            alt=""
+                            class="portfolio__img"
+                          />
+            
+                          <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">
+                              Website adaptable to all devices, with ui components and
+                              animated interactions. With Back-End Technology Using PHP
+                            </p>
+                            <a
+                              href="https://github.com/Nidosan07/Club_Management_System_Using-PHP"
+                              target="_blank"
+                              class="button button--flex button--small portfolio__button"
+                            >
+                              Demo
+                              <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                          </div>
+                        </div>
+
           </div>
           <div class="swiper-button-next">
             <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
@@ -974,48 +1052,111 @@
 
               <div>
                 <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Homagama, Colombo, Sri Lanka.</span>
+                <span class="contact__subtitle"
+                  >Homagama, Colombo, Sri Lanka.</span
+                >
               </div>
             </div>
           </div>
 
-          <form action="" class=".contact__form grid">
+          <form class=".contact__form grid" id = "form" name="contact-form" method="POST">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+                <input type="text" name="Name" class="contact__input" id = "Name" />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <input type="email" name="Email" class="contact__input" id = "Email" />
               </div>
             </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" class="contact__input" />
-            </div>
+            <!-- <div class="contact__content">
+              <label for="" name="Project" class="contact__label"
+                >Project</label
+              >
+              <input type="text" class="contact__input" id = "Project"/>
+            </div> -->
             <div class="contact__content">
               <label for="" class="contact__label">Message</label>
               <textarea
-                name=""
-                id=""
+                name="Message"
+                id="Message"
                 cols="0"
                 rows="7"
                 class="contact__input"
               ></textarea>
-              <input type="text" class="contact__input" />
             </div>
 
             <div>
-              <a href="#" class="button button--flex">
+              <!-- <a href="#" class="button button--flex">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </a> -->
+              <button type="submit" class="button button--flex" id="submit">
+                Send Message<i class="uil uil-message button__icon"></i>
+              </button>
             </div>
           </form>
         </div>
       </section>
     </main>
+    <script>
+      const url ="https://script.google.com/macros/s/AKfycbzx7_qlW--I0JG9PHNqk1nqQm59HGbm1yZl5xOHeTVJw5-BtE-ek2kABKBCCelpYjUp/exec"; // enter your public ('access' - 'anyone') deployment URL (NOT test deployment!)
+      document.getElementById("form").action = url;
+      
+      const form = document.forms['contact-form'];
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(url, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thank you! your form is submitted successfully." ))
+        .then(() => { window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+      })
+
+      // fetching the data from each column in the sheet
+      // then populating the respective datalist
+      fetch(`${url}?header=Name`)
+        .then((response) => response.json())
+        .then(({ data }) => {
+          console.log(data);
+          populateDatalists("Name", data);
+        })
+        .catch((error) => console.error("!!!!!!!!", error));
+
+      fetch(`${url}?header=Email`)
+        .then((response) => response.json())
+        .then(({ data }) => {
+          console.log(data);
+          populateDatalists("Email", data);
+        })
+        .catch((error) => console.error("!!!!!!!!", error));
+
+      // fetch(`${url}?header=Project`)
+      //   .then((response) => response.json())
+      //   .then(({ data }) => {
+      //     console.log(data);
+      //     populateDatalists("Project", data);
+      //   })
+      //   .catch((error) => console.error("!!!!!!!!", error));
+
+      fetch(`${url}?header=Message`)
+        .then((response) => response.json())
+        .then(({ data }) => {
+          console.log(data);
+          populateDatalists("Message", data);
+        })
+        .catch((error) => console.error("!!!!!!!!", error));
+
+      // function to add options to datalists
+      // const populateDatalists = (id, arr) => {
+      //   let result = "";
+      //   for (const item of arr) {
+      //     result += `<option value="${item}">`;
+      //   }
+      //   document.getElementById(id).innerHTML = result;
+      // };
+    </script>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
